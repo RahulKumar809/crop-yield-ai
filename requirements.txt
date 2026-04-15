@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+python-dotenv
+huggingface_hub[hf_xet]
+langchain-groq
+langchain-community
+scikit-learn>=1.6.1,<1.8
+numpy
+
+pandas
+
+seaborn
+
