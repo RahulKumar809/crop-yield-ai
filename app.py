@@ -874,7 +874,20 @@ if st.session_state.llm_explanation:
         <div class="advisor-header">🤖 Your KrishiMitra Advisor Says:</div>
     </div>
     """, unsafe_allow_html=True)
-    st.markdown(st.session_state.llm_explanation)
+    #st.markdown(st.session_state.llm_explanation)
+    st.markdown(
+    f"""
+    <div style="
+        color:#2E4A1F;
+        font-size:18px;
+        line-height:1.8;
+        font-weight:500;
+    ">
+    {st.session_state.llm_explanation}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     render_tts_player(st.session_state.llm_explanation)
 
 # ─── Footer ───────────────────────────────────────────────────────────────────
